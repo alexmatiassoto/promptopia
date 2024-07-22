@@ -13,7 +13,7 @@ const Profile = ({name, desc,data, handleEdit,
       <p className="desc text-left">{desc}</p>
 
       <div className="mt-10 prompt_layout">
-      
+      <p>{`Hay ${data.length} posts`}</p>
       { data.map( (post) => (
           <PromptCard 
             key={post._id}
